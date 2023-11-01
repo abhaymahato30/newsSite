@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body >
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" class="appLogo">BitNews</a>
+
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-link nav-items" id="home" onclick="reload()">Home</li>
+
+            <li class="hover-link nav-items" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+            <li class="hover-link nav-items" id="finance" onclick="onNavItemClick('finance')">FINANCE</li>
+            <li class="hover-link nav-items" id="politics" onclick="onNavItemClick('politics')">POLITICS</li>
+            <li class="hover-link nav-items" id="geology" onclick="onNavItemClick('geology')">GEOLOGY</li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input type="text" class="newsInput" id="news-inp" placeholder="eg:sports" />
+          <button class="search-button" id="search-btn">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main card -->
+
+    <main>
+      <div class="card-container container flex" id="card-container">
+
+      </div>
+    </main>
+    <template id="template-news-card"> 
+      <div class="card">
+      <div class="card-header">
+          <img src="https://placehold.co/400x200" alt="news-img" id="news-img"/>
+          </div>
+           <div class="card-content">
+          <h3 id="news-title">This is the Tittle</h3>
+          <h6 class="news-source" id="news-source">End gadget 26|06|2008</h6>
+          <p class="news-des" id="news-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laboriosam, doloremque officia inventore, quam illum rerum sunt aut minima voluptates eos soluta voluptas alias quos sapiente at fugiat rem ab!</p>
+         
+
+      </div>
+      </div>
+    <!-- </div> -->
+  </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
